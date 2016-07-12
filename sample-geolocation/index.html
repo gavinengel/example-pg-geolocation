@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta charset="utf-8">
+
+		<link href="styles/theme.css" rel="stylesheet" />
+		<link rel="stylesheet" href="styles/main.css" />
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="scripts/main.js"></script>
+	</head>
+<body>
+	<div class="header">
+		<h1>Geolocation Sample</h1>
+	</div>
+	<div class="subheader">
+		<div class="row">
+			<div class="col">
+				<button class="button" id="watchButton">Start Geolocation Watch</button>
+			</div>
+			<div class="col">
+				<button class="button" id="refreshButton">Refresh Geolocation Watch</button>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="row">
+			<div class="col u-text-center">
+				<span id="status" class="u-color-accent u-text-bold"></span>
+			</div>
+		</div>
+		<div id="results" class="hidden">
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Latitude: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="latitude" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Longitude: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="longitude" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Altitude: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="altitude" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Accuracy: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="accuracy" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Altitude Accuracy: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="altitudeAccuracy" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Heading: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="heading" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Speed: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="speed" class="u-color-accent"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col u-text-right">
+					<label class="u-text-bold">Timestamp: </label>
+				</div>
+				<div class="col u-text-left">
+					<span id="timestamp" class="u-color-accent"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span>Feature Examples</span>
+	</div>
+</body>
+</html>
